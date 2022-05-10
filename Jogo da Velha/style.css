@@ -1,0 +1,73 @@
+body,html {
+    height: 100%;
+    margin: 0;
+}  
+
+.bg::after {
+    content: "";
+    background: url('tic-tae-toe.png');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.titulo {
+    line-height: 100px;
+    margin-top: 0;
+}
+
+.quadrado {
+    text-align: center;
+    width: 320px;
+    height: 490px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -380px;
+    margin-left: -160px;
+    padding-top: 40px;
+}
+
+.quadrado-menor {
+    text-align: center;
+    width: 50px;
+    background: #eee;
+    display: inline-block;
+    padding: 20px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: #eee;
+}
+
+.layout {
+    width: 320px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: +140px;
+    padding-top: 10px;
+    text-align: center;
+    background: white;
+}
+
+.jogador, .vencedor {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: #eee;
+    cursor: pointer;
+}
